@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*헤더*/
+#header{
+    background:#3e1563;
+    height:100px;
+    line-height:100px; 
+}
+#header h1{
+    float:left;
+    margin-left:-135px; 
+}
+.util{
+    float:right;
+    margin-right:-135px; 
+}
+.util li{
+    float:left;
+    margin-right:70px; 
+}
+.util li:last-child{
+    margin-right:0; 
+}
+.util li a{
+    display:block; 
+}
+
+/*footer*/
+#footer{
+    background:#000;
+    color:#fff;
+    font-weight:normal;
+    font-size:18px;
+}
+
+.fTop{
+    background:#3e1563;
+    height:100px;
+    line-height:100px; 
+}
+.fMenu{}
+.fMenu li{
+    float:left;
+    margin-right:30px; 
+}
+.fMenu li:last-child{
+    margin-right:0; 
+}
+.fMenu li a{
+    color:#fff;
+    display:block; 
+}
+
+.fBottom{
+    padding:70px 0;
+    height:400px;
+    
+}
+.fInfo01{
+    position:relative; 
+}
+.fInfo01 h2{
+    font-size:18px; 
+}
+.fInfo01 p{
+    font-size:30px;
+    padding:20px 0; 
+}
+.fBottom span{
+    display:block; 
+}
+
+.family{
+    position:absolute;
+    top:50%;
+    margin-top:-25px; 
+    right:0; 
+}
+.family select{
+    appearance:none;
+    -webkit-appearance:none; 
+    border:1px solid #333;
+    width:200px;
+    height:50px;
+    outline:none;
+    background:#fff url(../images/common/footerBtn.png) no-repeat 90% center;
+    background-size:15px;
+    font-size:18px;
+    font-weight:bold; 
+    padding:10px 20px;
+    color:#333; 
+}
+.fInfo02{
+    font-size:18px;
+    margin-top:110px; 
+}
+.fInfo02 p{
+    margin:5px 0; 
+}

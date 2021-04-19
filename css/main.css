@@ -1,0 +1,540 @@
+@charset "utf-8";
+/*mainSlider*/
+.mainSlider{
+    position:relative; 
+}
+
+.mainImg img{
+    display:block;
+}
+
+/*슬릭이용한 슬라이더방법*/
+.mainImg .slick-slide{
+    height:800px;
+    position:relative; 
+    overflow:hidden; 
+}
+
+.mainImg .slick-slide img{
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
+}
+/*슬릭이용한 슬라이더방법*/
+
+/*양옆화살표 만들어서 적용하기*/
+.mainImg .slick-arrow{  
+    width:30px;
+    height:30px;
+    font-size:0;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    transform:translate(0,-50%) rotate(135deg);
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    z-index:1; 
+}
+.mainImg .prevBtn{left:50px;}
+.mainImg .nextBtn{
+    transform:rotate(-45deg);
+    right:50px;
+}
+/*양옆화살표*/
+
+/*슬라이더 버튼*/
+.mainImg .slick-dots{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    bottom:30px;
+}
+.slick-dots li{
+    float:left;
+}
+.slick-dots .slick-active button{
+    background:#fff;
+}
+
+.slick-dots button{
+    width:15px;
+    height:15px;
+    text-indent:-9999px;
+    background:none;
+    border-radius:50%;
+    border:1px solid #fff; 
+    margin:0 20px; 
+    outline:none;
+    cursor:pointer;
+}
+/*슬라이더 버튼*/
+
+.mainSlider02{
+    font-family:'Gotham';
+    position:relative; 
+}
+.mainSliderTit{
+    position:absolute;
+    top:183px;
+    left:360px; 
+}
+
+.mainSliderTit h3{
+    font-size:25px; 
+}
+.mainSliderTit p{
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:40px; 
+}
+.mainSliderTit span{
+    font-family:'notosans';
+    font-size:18px; 
+    font-weight:400;
+    display:block;
+}
+
+
+.lastTit{
+    color:#666;
+    margin-top:10px;
+    margin-bottom:100px; 
+}
+
+.moreBtn{
+    width:250px;
+    height:60px;
+    line-height:60px;    
+    background:rgba(251,221,229,0.1); 
+    border:3px solid #3e1563;
+    border-radius:10px; 
+    position:relative;
+    display:inline-block;
+}
+.moreBtn a{
+    color:#3e1563;
+    outline:none;
+    padding:0 50px;
+    height:100%;
+    font-size:20px;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:0;
+}
+.moreBtn p{
+      
+}
+
+.mainImg .moreBtn img{
+    position:absolute;
+    top:50%;
+    margin-top:-10px;
+    margin-left:58px; 
+    width:20px;
+    height:20px; 
+}
+
+/*snsIcon*/
+.snsIcon{  /*fixed를 해놓고 snsIcon을 앱솔루트로 띄워서 자리를 정해줘야함*/
+    position:absolute;
+    right:20px;
+    top:1000px;
+    z-index:1; 
+}
+.fixed{
+    position:fixed;
+    right:20px; 
+    top:0;
+}
+.snsIcon li{
+    margin-bottom:20px;
+   
+}
+.snsIcon li a{
+}
+.snsIcon li img{ 
+}
+
+/*mainCon01*/
+.mainCon01{
+    font-family:'Gotham';
+    font-size:20px;
+    font-weight:600;
+    text-align:center;
+    position:relative;
+   
+}
+.gnbBg{
+    height:100px;
+    line-height:100px;
+    background:#fbf6ff;
+}
+
+.gnb li{
+    float:left;
+    margin-right:100px; 
+}
+.gnb li:last-child{
+    margin-right:0; 
+}
+.gnb li a{
+    color:#3e1563;
+
+}
+.con01Top{
+    position:relative; 
+}
+.con01Icon{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.con01Icon li{
+    float:left;
+    margin-left:50px; 
+}
+.con01Icon li:first-child{
+    margin-left:0; 
+}
+.con01Icon li a{
+    display:block; 
+}
+.con01Icon li img{
+}
+
+/*con01Menu*/
+.con01Tit{
+    padding:80px 0;
+    position:relative;
+}
+.con01Tit::before{
+    content:"";
+    display:block;
+    width:300px;
+    border:2px solid #3e1563;
+    position:absolute;
+    left:-360px;
+    top:200px;
+}
+.con01Tit h2{
+    font-family:'Gotham';
+    font-size:35px;
+    text-align:left; 
+    color:#3e1563;
+}
+.con01List{
+    position:relative;
+}
+.con01Menu{
+   position:relative; 
+}
+.con01Menu li{
+    float:left;
+    height:600px;
+    overflow:hidden; 
+}
+.con01Menu li img{
+    display:block;
+    width:380px;
+    height:500px;
+    border:1px solid #333;
+    
+}
+/*con01Menu li 여백주는법 여백60px:각각양옆으로 10px마진주기 슬릭슬라이더는 각 컨텐츠마다 들어가기때문에 부모를 같이 불러와야함*/
+.con01Menu .slick-list{
+    margin:0 -10px; 
+}
+.con01Menu .slick-slide{
+    margin:0 10px; 
+}
+/*con01Menu li 여백주는법*/
+
+.menuInfo{ 
+    height:50px;
+    line-height:50px;
+    position:absolute;
+    bottom:60px;
+    text-align:left; 
+    
+}
+.menuInfo h3{
+    margin-top:20px; 
+    width:300px; 
+    font-size:18px;
+    font-weight:normal;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+}
+.menuInfo p{
+    font-size:25px;
+    font-weight:bold; 
+}
+
+.con01MoreBtn{
+    margin-top:100px;
+    width:250px;
+    height:60px;
+    line-height:60px;    
+    background:rgba(251,221,229,0.1); 
+    border:3px solid #3e1563;
+    border-radius:10px; 
+    position:relative;
+    display:inline-block;
+}
+
+.con01MoreBtn a{
+    color:#3e1563;
+    outline:none;   
+    height:100%;
+    font-size:20px;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:0;
+    margin-left:-40px; 
+}
+.con01MoreBtn img{
+    position:absolute;
+    top:50%;
+    margin-top:-10px;
+    margin-left:40px; 
+    width:20px;
+    height:20px; 
+}
+
+.sliderBtn01{
+    width:37px;
+    height:70px;
+    position:absolute; 
+    top:50%;
+    margin-top:-166px; 
+    cursor:pointer;
+}
+
+.sliderBtn01 img{}
+
+.prevBtn01{
+    left:-80px;  
+}
+.nextBtn01{
+    right:-80px; 
+}
+
+/*mainCon02*/
+.mainCon02{
+    padding:100px 0; 
+    background:url(../images/main/con02Bg01.png) no-repeat center center;
+    height:1200px;
+    background-size:cover;
+    font-size:25px;
+    text-align:center; 
+}
+.con02Bg{
+    width:80%;
+    margin:0 auto;
+    padding:150px 0; 
+}
+.con02Left{
+    float:left;   
+    height:800px;
+    width:40%; 
+    
+}
+.con02Left h2{
+    font-size:60px;
+    color:#3e1563;
+    font-family: 'playball';
+    top:0;
+    text-align:left; 
+    
+}
+.con02Left p{
+    width:450px;
+    margin-top:100px;
+    word-break:keep-all;
+    text-align:left; 
+}
+.con02Left span{
+    display:block;
+    font-family: 'Gotham';
+    font-weight:600; 
+    font-size:20px;
+    margin-left:80px; 
+    margin-top:80px; 
+}
+
+.mainCon02 .moreBtn, .mainCon04 .moreBtn{
+    margin-top:130px;
+    width:250px;
+    height:60px;
+    line-height:60px;    
+    background:rgba(251,221,229,0.1); 
+    border:3px solid #3e1563;
+    border-radius:10px; 
+    position:relative;
+    display:inline-block; 
+}
+.mainCon02 .moreBtn a, .mainCon04 .moreBtn a{
+    color:#3e1563;
+    outline:none;   
+    height:100%;
+    font-size:20px;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:0;
+    margin-left:-40px; 
+}
+.mainCon02 .moreBtn img, .mainCon04 .moreBtn img{
+    position:absolute;
+    top:50%;
+    margin-top:-10px;
+    margin-left:40px; 
+    width:20px;
+    height:20px; 
+}
+
+.con02Right{
+    float:right;
+    width:60%; 
+    margin-top:65px; 
+}
+.con02Right img{
+    width:100%;
+    display:block; 
+}
+
+/*mainCon03*/
+.mainCon03{
+    text-align:center;
+    padding:100px 0; 
+}
+.mainCon03 p{
+    font-family: 'Gotham';
+    font-size:50px;
+    font-weight:600;    
+}
+
+#Con03Video{
+    margin-top:100px; 
+    width:1200px;
+    overflow:hidden; 
+}
+
+/*mainCon04*/
+.mainCon04{
+    background:url(../images/main/con04Bg.png) no-repeat center center;
+    overflow:auto;
+    width:80%;
+    margin:0 auto;
+    padding:100px 0;
+    text-align:center;
+    position:relative; 
+}
+.con04Left{
+    float:left;
+}
+
+.con04Left img{
+    display:block;
+    width:100%; 
+}
+.con04Right{
+    position:absolute;
+    right:0;   
+    padding-left:150px;
+    padding-top:20px;
+    box-sizing:border-box; 
+    
+}
+.con04Right h2{
+    text-align:left; 
+    color:#885a41;
+    font-size:50px; 
+}
+.con04Right p{
+    font-size:25px;
+    margin-top:100px;
+    word-break:keep-all;
+    text-align:left;
+}
+.con04Right span{
+    display:block;
+    font-family: 'Gotham';
+    font-weight:600; 
+    font-size:20px;
+    margin-left:80px; 
+    margin-top:80px; 
+}
+
+.mainCon04 .moreBtn{
+    margin-top:133px; 
+}
+.mainCon04 .moreBtn a{}
+.mainCon04 .moreBtn img{}
+
+/*mainCon05*/
+.mainCon05{
+    font-size:30px; 
+    font-weight:bold;
+    font-family: 'Gotham';
+    width:80%;
+    margin:0 auto;
+    padding:100px 0;
+}
+.mainCon05 p{
+    position:relative; 
+}
+.mainCon05 p::before{
+    content:"";
+    display:block;
+    width:60%;
+    border:2px solid #3e1563;
+    box-sizing:border-box; 
+    position:absolute;
+    bottom:10px;
+    right:0; 
+    
+}
+.mainCon05 span{
+    font-weight: 400;
+    margin-left:10px; 
+}
+.con05List{
+    position:relative;
+ 
+}
+.con05Img{
+    margin-top:150px;
+    padding:0 50px; 
+}
+.con05Img li{ 
+}
+.con05Img li a{}
+.con05Img li img{
+    display:block;
+}
+.con05Img .slick-list{
+    margin:0 -10px;
+}
+.con05Img .slick-slide{
+    margin:0 10px;
+}
+.con05Img .slick-slide img{
+    width:100%; 
+}
+.con05Slider{
+    position:absolute;
+    width:37px;
+    height:70px;
+    top:50%;
+    margin-top:-35px; 
+    cursor:pointer;
+}
+.prevBtn05{
+    left:0; 
+}
+.prevBtn05 img{}
+.nextBtn05{
+    right:0; 
+}
+.nextBtn05 img{}
