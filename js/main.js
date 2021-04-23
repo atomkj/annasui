@@ -7,7 +7,7 @@ $(document).ready(function(){
         prevArrow:'<div class="prevBtn">이전</div>',
         nextArrow:'<div class="nextBtn">다음</div>',
         autoplay:true,
-        autoplaySpeed:2000,
+        autoplaySpeed:4000,
         pauseOnHover:false,
     })
     
